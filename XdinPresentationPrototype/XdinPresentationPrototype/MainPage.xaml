@@ -6,11 +6,13 @@
              mc:Ignorable="d"
              x:Class="XdinPresentationPrototype.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid VerticalOptions="Start" HorizontalOptions="Fill" Padding="0,0,0,0" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15*"></ColumnDefinition>
+            <ColumnDefinition Width="85*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ImageButton Grid.Row="0" Grid.Column="0" x:Name="menu" BackgroundColor="White" Clicked="Menu_Clicked"></ImageButton>
+        <Image Grid.Row="0" Grid.Column="1" x:Name="logo"></Image>
+    </Grid>
 
 </ContentPage>

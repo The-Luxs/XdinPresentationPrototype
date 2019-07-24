@@ -11,6 +11,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Images2\**" />
+    <EmbeddedResource Remove="Images2\**" />
+    <None Remove="Images2\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\logoxdin.png" />
+    <None Remove="Images\menulogo.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\logoxdin.png" />
+    <EmbeddedResource Include="Images\menulogo.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
   </ItemGroup>
