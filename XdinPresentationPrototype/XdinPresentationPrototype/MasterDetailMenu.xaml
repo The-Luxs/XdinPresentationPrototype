@@ -17,11 +17,11 @@
                 FlyoutDisplayOptions="AsMultipleItems"
                 >
 
-        <ShellContent Title="Home" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Home}" />
-        <ShellContent Title="About" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.About}" />
-        <ShellContent Title="Media" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Media}" />
-        <ShellContent Title="Portfolio" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Portfolio}" />
-        <ShellContent Title="Contact" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Contact}" />
+        <ShellContent Title="Home" Icon="homeIcon.png" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Home}" />
+        <ShellContent Title="About" Icon="aboutIcon.png" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.About}" />
+        <ShellContent Title="Media" Icon="mediaIcon.png" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Media}" />
+        <ShellContent Title="Portfolio" Icon="portfolioIcon.png" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Portfolio}" />
+        <ShellContent Title="Contact" Icon="contactIcon.png" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Contact}" />
 
 
 
