@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell       xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:XdinPresentationPrototype"
+             mc:Ignorable="d"
+             x:Class="XdinPresentationPrototype.MasterDetailMenu">
+
+    <Shell.FlyoutHeader>
+        <local:MenuHeader />
+    </Shell.FlyoutHeader>
+  
+  
+    <FlyoutItem Title="Xdin Presentation Prototype"
+                Shell.TabBarIsVisible="False"
+                FlyoutDisplayOptions="AsMultipleItems"
+                >
+
+        <ShellContent Title="Home" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Home}" />
+        <ShellContent Title="About" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.About}" />
+        <ShellContent Title="Media" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Media}" />
+        <ShellContent Title="Portfolio" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Portfolio}" />
+        <ShellContent Title="Contact" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Contact}" />
+
+
+
+    </FlyoutItem>
+    
+    
+    
+    
+</Shell>

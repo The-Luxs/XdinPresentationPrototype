@@ -10,7 +10,7 @@ namespace XdinPresentationPrototype
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MasterDetailMenu();
         }
 
         protected override void OnStart()
