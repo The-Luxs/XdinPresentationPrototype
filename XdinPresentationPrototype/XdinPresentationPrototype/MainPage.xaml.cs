@@ -16,14 +16,6 @@ namespace XdinPresentationPrototype
         public MainPage()
         {
             InitializeComponent();
-
-            menu.Source = ImageSource.FromResource("XdinPresentationPrototype.Images.menulogo.PNG");
-            logo.Source = ImageSource.FromResource("XdinPresentationPrototype.Images.logoxdin.png");
-        }
-
-        private void Menu_Clicked(object sender, EventArgs e)
-        {
-            DisplayAlert("Menu","I AM MENU! RAWR!!!!","Okay, im scared");
         }
     }
 }
