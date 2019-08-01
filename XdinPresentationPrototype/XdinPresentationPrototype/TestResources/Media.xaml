@@ -4,7 +4,16 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:local="clr-namespace:XdinPresentationPrototype.MarkupExtensions"
              x:Class="XdinPresentationPrototype.TestResources.Media">
+
+    <Shell.TitleView>
+        <Image Source="{local:EmbeddedImage ResourceId=XdinPresentationPrototype.Images.logoXdinMedium.png}"
+               x:Name="header"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"></Image>
+    </Shell.TitleView>
+    
     <ContentPage.Content>
         <StackLayout>
             <Label Text="This is Media"
