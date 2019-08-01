@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:XdinPresentationPrototype"
              mc:Ignorable="d"
-             x:Class="XdinPresentationPrototype.MasterDetailMenu">
+             x:Class="XdinPresentationPrototype.MasterDetailMenu"
+             BackgroundColor="White">
 
     <Shell.FlyoutHeader>
         <local:MenuHeader />

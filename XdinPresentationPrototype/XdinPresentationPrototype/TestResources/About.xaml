@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:local="clr-namespace:XdinPresentationPrototype.MarkupExtensions"
-             x:Class="XdinPresentationPrototype.TestResources.About">
+             x:Class="XdinPresentationPrototype.TestResources.About"
+             Shell.ForegroundColor="Black">
 
     <Shell.TitleView>
         <Image Source="{local:EmbeddedImage ResourceId=XdinPresentationPrototype.Images.logoXdinMedium.png}"
