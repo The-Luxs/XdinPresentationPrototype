@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:XdinPresentationPrototype"
              mc:Ignorable="d"
-             x:Class="XdinPresentationPrototype.MasterDetailMenu">
+             x:Class="XdinPresentationPrototype.MasterDetailMenu"
+             >
 
     <Shell.FlyoutHeader>
         <local:MenuHeader />
@@ -16,13 +17,29 @@
                 Shell.TabBarIsVisible="False"
                 FlyoutDisplayOptions="AsMultipleItems"
                 >
+        <Tab Title="Home"
+             Icon="homeIcon.png">
+        <ShellContent  IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Home}" />
+        </Tab>
 
-        <ShellContent Title="Home" Icon="homeIcon.png" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Home}" />
-        <ShellContent Title="About" Icon="aboutIcon.png" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.About}" />
-        <ShellContent Title="Media" Icon="mediaIcon.png" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Media}" />
-        <ShellContent Title="Portfolio" Icon="portfolioIcon.png" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Portfolio}" />
-        <ShellContent Title="Contact" Icon="contactIcon.png" IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Contact}" />
+        <Tab Title="About"
+             Icon="aboutIcon.png">
+            <ShellContent IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.About}" />
+        </Tab>
 
+        <Tab Title="Media" 
+             Icon="mediaIcon.png">
+            <ShellContent  IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Media}" />
+        </Tab>
+
+        <Tab Title="Portfolio" 
+             Icon="portfolioIcon.png">
+            <ShellContent IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Portfolio}" />
+        </Tab>
+
+        <Tab  Title="Contact" Icon="contactIcon.png">
+           <ShellContent IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Contact}" />
+        </Tab>
 
 
     </FlyoutItem>
