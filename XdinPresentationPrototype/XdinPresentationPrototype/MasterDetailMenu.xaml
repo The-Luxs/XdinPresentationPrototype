@@ -6,19 +6,32 @@
              xmlns:local="clr-namespace:XdinPresentationPrototype"
              mc:Ignorable="d"
              x:Class="XdinPresentationPrototype.MasterDetailMenu"
+             FlyoutHeaderBehavior="CollapseOnScroll"
              >
 
     <Shell.FlyoutHeader>
         <local:MenuHeader />
     </Shell.FlyoutHeader>
-  
+
+    <Shell.TitleView>
+        <AbsoluteLayout>
+            <BoxView AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="Red"/>
+        </AbsoluteLayout>
+    </Shell.TitleView>
   
     <FlyoutItem Title="Xdin Presentation Prototype"
                 Shell.TabBarIsVisible="False"
                 FlyoutDisplayOptions="AsMultipleItems"
+                Shell.ForegroundColor="Black"
+                Shell.BackgroundColor="White"
                 >
+        
+        
         <Tab Title="Home"
-             Icon="homeIcon.png">
+             Icon="homeIcon.png"
+             >
+            
+            
         <ShellContent  IsTabStop="True" ContentTemplate="{DataTemplate local:TestResources.Home}" />
         </Tab>
 
