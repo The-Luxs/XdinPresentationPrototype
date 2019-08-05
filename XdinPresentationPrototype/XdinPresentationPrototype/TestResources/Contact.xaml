@@ -17,9 +17,8 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="This is Contact"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label FontAttributes="Bold" Text="Xdin location" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Button x:Name="btnclick" Text="Click" Clicked="Btnclick_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
