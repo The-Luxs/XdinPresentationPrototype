@@ -6,7 +6,6 @@ using Xamarin.Forms.Xaml;
 
 namespace XdinPresentationPrototype.MarkupExtensions
 {
-    //[ContentProperty("ResourceId")]
     public class EmbeddedImage : IMarkupExtension
     {
         public string ResourceId { get; set; }

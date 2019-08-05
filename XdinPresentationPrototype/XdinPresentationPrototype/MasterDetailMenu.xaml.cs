@@ -15,8 +15,6 @@ namespace XdinPresentationPrototype
         public MasterDetailMenu()
         {
             InitializeComponent();
-
-            //header.Source = ImageSource.FromResource("XdinPresentationPrototype.Images.logoxdin.png");
         }
     }
 }
