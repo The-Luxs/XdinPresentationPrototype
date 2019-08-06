@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XdinPresentationPrototype.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XdinPresentationPrototype.iOS", "XdinPresentationPrototype\XdinPresentationPrototype.iOS\XdinPresentationPrototype.iOS.csproj", "{8E2D588E-7B59-4891-A3FC-35887B58B4BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XdinPresentationPrototype", "XdinPresentationPrototype\XdinPresentationPrototype\XdinPresentationPrototype.csproj", "{941F31FD-A1BE-45A3-8E99-F569FC1FEE34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XdinPresentationPrototype", "XdinPresentationPrototype\XdinPresentationPrototype\XdinPresentationPrototype.csproj", "{941F31FD-A1BE-45A3-8E99-F569FC1FEE34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
