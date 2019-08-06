@@ -6,8 +6,12 @@
              xmlns:local="clr-namespace:XdinPresentationPrototype"
              mc:Ignorable="d"
              x:Class="XdinPresentationPrototype.MasterDetailMenu"
+<<<<<<< HEAD
              FlyoutHeaderBehavior="CollapseOnScroll"
              >
+=======
+             BackgroundColor="White">
+>>>>>>> master
 
     <Shell.FlyoutHeader>
         <local:MenuHeader />

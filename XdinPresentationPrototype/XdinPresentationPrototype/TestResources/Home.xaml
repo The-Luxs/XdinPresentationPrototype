@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+<<<<<<< HEAD
              x:Class="XdinPresentationPrototype.TestResources.Home"
              BackgroundColor="LightGray">
 
@@ -23,6 +24,24 @@
                      Spacing="2"  BackgroundColor="White">
             <Image Source="xdinImage_worldMap.jpg" Aspect="AspectFill" />
 
+=======
+             xmlns:local="clr-namespace:XdinPresentationPrototype.MarkupExtensions"
+             x:Class="XdinPresentationPrototype.TestResources.Home"
+             Shell.ForegroundColor="Black">
+
+    <Shell.TitleView>
+        <Image Source="{local:EmbeddedImage ResourceId=XdinPresentationPrototype.Images.logoXdinMedium.png}"
+               x:Name="header"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"></Image>
+    </Shell.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="This is HOME"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+>>>>>>> master
         </StackLayout>
 
         <ListView x:Name="homeSectionList"
