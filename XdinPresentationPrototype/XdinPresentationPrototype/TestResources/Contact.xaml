@@ -17,8 +17,12 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label FontAttributes="Bold" Text="Xdin location" VerticalOptions="Center" HorizontalOptions="Center" />
-            <Button x:Name="btnclick" Text="Click" Clicked="Btnclick_Clicked" />
+            <Label Text="Linda Norberg, Business Manager" FontSize="Medium"></Label>
+            <Image Source="{local:EmbeddedImage ResourceId=XdinPresentationPrototype.Images.LindaXdin.jpg}"></Image>
+            <Button x:Name="EmailClick" Clicked="EmailClick_Clicked" Text="Email Linda"></Button>
+            <Label FontAttributes="Bold" Text="7874 Thorndike Rd, Greensboro, NC 27409" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Button x:Name="btnclick" Text="View on Map" Clicked="Btnclick_Clicked" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

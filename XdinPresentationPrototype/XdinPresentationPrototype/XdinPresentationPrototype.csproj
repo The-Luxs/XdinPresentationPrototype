@@ -11,10 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\LindaXdin.jpg" />
     <None Remove="Images\logoXdinMedium.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Images\LindaXdin.jpg" />
     <EmbeddedResource Include="Images\logoXdinMedium.png" />
   </ItemGroup>
 

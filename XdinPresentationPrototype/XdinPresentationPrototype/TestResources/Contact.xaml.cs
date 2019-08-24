@@ -16,6 +16,7 @@ namespace XdinPresentationPrototype.TestResources
         public Contact()
         {
             InitializeComponent();
+
         }
 
         private void Btnclick_Clicked(object sender, EventArgs e)
@@ -25,8 +26,35 @@ namespace XdinPresentationPrototype.TestResources
             {
                 Name = "Xdin"
             };
-            Map.OpenAsync(location, options);
 
+            try
+            {
+                Map.OpenAsync(location, options);
+            }
+            catch (Exception ex)
+            {
+                ProcessException(ex);
+            }
+
+        }
+
+        void ProcessException(Exception ex)
+        {
+            if (ex != null)
+                Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
+        }
+
+        private void EmailClick_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Email.ComposeAsync(string.Empty, string.Empty, "linda.norberg@xdin.com");
+            }
+            catch(Exception ex)
+            {
+                ProcessException(ex);
+            }
+            
         }
     }
 }
