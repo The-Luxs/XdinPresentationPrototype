@@ -4,12 +4,25 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="XdinPresentationPrototype.TestResources.Contact">
+             xmlns:local="clr-namespace:XdinPresentationPrototype.MarkupExtensions"
+             x:Class="XdinPresentationPrototype.TestResources.Contact"
+             Shell.ForegroundColor="Black">
+
+    <Shell.TitleView>
+        <Image Source="{local:EmbeddedImage ResourceId=XdinPresentationPrototype.Images.logoXdinMedium.png}"
+               x:Name="header"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"></Image>
+    </Shell.TitleView>
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="This is Contact"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Linda Norberg, Business Manager" FontSize="Medium"></Label>
+            <Image Source="{local:EmbeddedImage ResourceId=XdinPresentationPrototype.Images.LindaXdin.jpg}"></Image>
+            <Button x:Name="EmailClick" Clicked="EmailClick_Clicked" Text="Email Linda"></Button>
+            <Label FontAttributes="Bold" Text="7874 Thorndike Rd, Greensboro, NC 27409" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Button x:Name="btnclick" Text="View on Map" Clicked="Btnclick_Clicked" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
