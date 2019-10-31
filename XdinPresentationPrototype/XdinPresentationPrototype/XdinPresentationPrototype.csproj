@@ -13,11 +13,13 @@
   <ItemGroup>
     <None Remove="Images\LindaXdin.jpg" />
     <None Remove="Images\logoXdinMedium.png" />
+    <None Remove="Images\Mattias.PNG" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Images\LindaXdin.jpg" />
     <EmbeddedResource Include="Images\logoXdinMedium.png" />
+    <EmbeddedResource Include="Images\Mattias.PNG" />
   </ItemGroup>
 
   <ItemGroup>

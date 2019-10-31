@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
+using System.Windows.Input;
 
 namespace XdinPresentationPrototype.TestResources
 {
@@ -37,6 +38,10 @@ namespace XdinPresentationPrototype.TestResources
             }
 
         }
+        public ICommand ClickCommand => new Command<string>((url) =>
+        {
+            Device.OpenUri(new System.Uri(url));
+        });
 
         void ProcessException(Exception ex)
         {
@@ -44,7 +49,7 @@ namespace XdinPresentationPrototype.TestResources
                 Application.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
         }
 
-        private void EmailClick_Clicked(object sender, EventArgs e)
+        private void EmailLindaClick_Clicked(object sender, EventArgs e)
         {
             try
             {
@@ -55,6 +60,32 @@ namespace XdinPresentationPrototype.TestResources
                 ProcessException(ex);
             }
             
+        }
+
+        private void CallLinda_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                PhoneDialer.Open("+13366889049");
+            }
+            catch (Exception ex)
+            {
+                ProcessException(ex);
+            }
+
+        }
+
+        private void CallMattias_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                PhoneDialer.Open("+13365493351");
+            }
+            catch (Exception ex)
+            {
+                ProcessException(ex);
+            }
+
         }
     }
 }
