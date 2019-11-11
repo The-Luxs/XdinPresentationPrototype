@@ -14,15 +14,31 @@
                HorizontalOptions="Center"
                VerticalOptions="Center"></Image>
     </Shell.TitleView>
-    
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Linda Norberg, Business Manager" FontSize="Medium"></Label>
-            <Image Source="{local:EmbeddedImage ResourceId=XdinPresentationPrototype.Images.LindaXdin.jpg}"></Image>
-            <Button x:Name="EmailClick" Clicked="EmailClick_Clicked" Text="Email Linda"></Button>
-            <Label FontAttributes="Bold" Text="7874 Thorndike Rd, Greensboro, NC 27409" VerticalOptions="Center" HorizontalOptions="Center" />
-            <Button x:Name="btnclick" Text="View on Map" Clicked="Btnclick_Clicked" />
 
-        </StackLayout>
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout Grid.Row="0" Grid.Column="0">
+                <Label Text="Linda Norberg, Business Manager" FontSize="Medium" HorizontalTextAlignment="Center"></Label>
+                <Image Source="{local:EmbeddedImage ResourceId=XdinPresentationPrototype.Images.LindaXdin.jpg}"></Image>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button x:Name="EmailLindaClick" Clicked="EmailLindaClick_Clicked" Text="Email Linda"></Button>
+                    <Button x:Name="CallLinda" Text="Call Linda" Clicked="CallLinda_Clicked"></Button>
+                    <Button x:Name="btnclick" Text="View on Map" Clicked="Btnclick_Clicked" />
+                </StackLayout>
+                <Label FontAttributes="Bold" Text="7874 Thorndike Rd, Greensboro, NC 27409" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="0">
+                <Label Text="Mattias Kihlman, Executive Vice President" FontSize="Medium" HorizontalTextAlignment="Center"></Label>
+                <Image Source="{local:EmbeddedImage ResourceId=XdinPresentationPrototype.Images.Mattias.PNG}"></Image>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button x:Name="EmailMattiasClick" Clicked="EmailLindaClick_Clicked" Text="Email Mattias"></Button>
+                    <Button x:Name="CallMattias" Text="Call Mattias" Clicked="CallMattias_Clicked"></Button>
+                    <Button x:Name="btnclick2" Text="View on Map" Clicked="Btnclick_Clicked" />
+                </StackLayout>
+                <Label FontAttributes="Bold" Text="7874 Thorndike Rd, Greensboro, NC 27409" VerticalOptions="Center" HorizontalOptions="Center" />
+
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
